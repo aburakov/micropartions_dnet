@@ -1,0 +1,6 @@
+@Micropartions_HostAddress = http://localhost:5167
+
+GET {{Micropartions_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
