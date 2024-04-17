@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Micropartions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc5c3ac255c81d0b5582bb68431c72cf7ac0623e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Micropartions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Micropartions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
