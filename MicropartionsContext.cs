@@ -15,7 +15,7 @@ public partial class MicropartionsContext : DbContext
     {
     }
 
-    public virtual DbSet<Micropartion> Micropartions { get; set; }
+    public virtual DbSet<MicropartionsManager> Micropartions { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -23,7 +23,7 @@ public partial class MicropartionsContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Micropartion>(entity =>
+        modelBuilder.Entity<MicropartionsManager>(entity =>
         {
             entity.HasKey(e => new { e.Micropartionguid, e.Skuserial, e.Operationguid, e.Operationnumber }).HasName("micropartions_pkey");
 

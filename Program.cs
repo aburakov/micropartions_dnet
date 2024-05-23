@@ -1,44 +1,24 @@
-using System.Collections;
-using System.Data;
+using System.Text;
+using System.Text.Json;
 using Micropartions;
-using Npgsql;
+using Micropartions.Entity;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+builder.Services.AddCors(options =>
 {
-    // app.UseSwagger();
-    // app.UseSwaggerUI();
-}
-
-// app.UseHttpsRedirection();
-
-var connString = $"Host={builder.Configuration["Host:Ip"]}:{builder.Configuration["Host:Port"]};Username={builder.Configuration["DatabaseCredentials:Username"]};Password={builder.Configuration["DatabaseCredentials:Password"]};Database={builder.Configuration["DatabaseName"]}";
-
-List<Micropartion> allMicroPartions = new List<Micropartion>();
-
-app.MapGet("/micro", () =>
-{
-    var dataSourceBuilder = new NpgsqlDataSourceBuilder(connString);
-    var dataSource = dataSourceBuilder.Build();
-
-    var conn =  dataSource.OpenConnection();
-
-    using var cmd = new NpgsqlCommand("SELECT * FROM micropartions", conn);
-    using var reader = cmd.ExecuteReader();
-    while (reader.Read())
-        allMicroPartions.Add(new Micropartion()
-        {
-            Micropartionguid = reader.GetString(0),
-            Boxserial =reader.GetString(1),
-            Skuserial = reader.GetString(2),
-            Operationguid = reader.GetString(3),
-            Operationnumber = reader.GetInt32(4)
-        });
-    Console.WriteLine("Finish");
+    options.AddPolicy("AllowAllOrigin",
+        builderLocal => builderLocal
+            .SetIsOriginAllowed(x => _ = true)
+            .AllowAnyMethod()
+            .AllowAnyHeader());
 });
+
+var app = builder.Build();
+app.UseCors("AllowAllOrigin");
+
+app.MapGet("/micro", () => MicropartionsManager.GetJsonMicropartionsToFront(builder));
+
+app.MapPost("/micro", (HttpRequest request) => MicropartionsManager.SaveMicropartionsFromFrontToDb(request,builder));
 
 app.Run();

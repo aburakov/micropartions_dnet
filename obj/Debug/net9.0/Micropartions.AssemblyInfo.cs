@@ -10,10 +10,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Micropartions")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("BTMC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc5c3ac255c81d0b5582bb68431c72cf7ac0623e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+387e8e00ea3c5f5d0ce0e162eb3495eaa2d9e0c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Micropartions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Micropartions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

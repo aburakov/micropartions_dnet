@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "m24b64nzLWWMLyc5+0JlkeGJF+vrvW3fkF1J+rSR4p3zDrWB1MvbN+7KD8HqljCkt1KVXi8bPnP+3ixRUjvbCw==",
+  "dgSpecHash": "f0360v4VH7T0BPG1C4p+dP1kQKIagMOjAkeYHkg+VCLqPM7qyj9UXIaNn4tCJYDIsg28VTP5FAicPHTTERjzYA==",
   "success": true,
   "projectFilePath": "/Users/ab/Documents/dNet/Micropartions/Micropartions/Micropartions.csproj",
   "expectedPackageFiles": [
@@ -25,7 +25,10 @@
     "/Users/ab/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "/Users/ab/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "/Users/ab/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
-    "/Users/ab/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+    "/Users/ab/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
+    "/Users/ab/.nuget/packages/microsoft.netcore.app.ref/8.0.1/microsoft.netcore.app.ref.8.0.1.nupkg.sha512",
+    "/Users/ab/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.1/microsoft.aspnetcore.app.ref.8.0.1.nupkg.sha512",
+    "/Users/ab/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.1/microsoft.netcore.app.host.osx-arm64.8.0.1.nupkg.sha512"
   ],
   "logs": []
 }
