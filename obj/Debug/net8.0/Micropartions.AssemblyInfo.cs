@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BTMC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+387e8e00ea3c5f5d0ce0e162eb3495eaa2d9e0c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ced489b4ce232ef085a5131b521da21e184d3ed4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Micropartions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Micropartions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

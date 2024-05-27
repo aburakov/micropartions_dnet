@@ -21,4 +21,5 @@ app.MapGet("/micro", () => MicropartionsManager.GetJsonMicropartionsToFront(buil
 
 app.MapPost("/micro", (HttpRequest request) => MicropartionsManager.SaveMicropartionsFromFrontToDb(request,builder));
 
+
 app.Run();
